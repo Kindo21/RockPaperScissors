@@ -67,6 +67,7 @@ function round(computerSelection, playerSelection) {
 
 for (let i = 0; i < 5; i++){
     playerSelection = window.prompt("Please choose rock paper or scissors");
+    playerSelection.toLowerCase();
     round();
     console.log(round(computerSelection, playerSelection));
 }
