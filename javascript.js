@@ -1,12 +1,12 @@
-let x = myFunction(4, 3);
+/*let x = myFunction(4, 3);
 
 function myFunction(a, b){
     return a *  b;
 }
-console.log(x)
+console.log(x)*/
 
 
-let y = computerPlay();
+/*let y = computerPlay();*/
 
 
 function computerPlay(){
@@ -16,4 +16,4 @@ function computerPlay(){
     return randomHand;
 }
 
-console.log(y)
+console.log(computerPlay())
