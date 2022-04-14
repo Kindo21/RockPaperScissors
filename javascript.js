@@ -36,27 +36,35 @@ The function should take two parameters - the playerSelection and computerSelect
 function round(computerSelection, playerSelection) {
     let result;
     if (computerSelection === playerSelection){
-
-        result = 'tie';
+        if(computerSelection === "rock" && playerSelection === "rock"){
+            result = ' both chose rock tie';
+        }
+        else if(computerSelection === "paper" && playerSelection === "paper"){
+            result = 'both chose paper tie';
+        }
+        else if(computerSelection === "scissors" && playerSelection === "scissors"){
+            result = 'both chose scissors tie';
+        }
+        
     }
     else if(computerSelection != playerSelection){
         if(computerSelection === "rock" && playerSelection === "scissor"){
-            result = "Computer wins"
+            result = "Rock beats scissors Computer wins"
         }
         else if(computerSelection === "rock" && playerSelection === "paper"){
-            result = "player wins"
+            result = "paper beats rock player wins"
         }
         else if(computerSelection === "paper" && playerSelection === "rock"){
-            result = "computer wins"
+            result = "paper beats rock computer wins"
         }
         else if(computerSelection === "paper" && playerSelection === "scissors"){
-            result = "player wins"
+            result = "scissors beats paper player wins"
         }
         else if(computerSelection === "scissors" && playerSelection === "rock"){
-            result = "player wins"
+            result = "rock beats scissors player wins"
         }
         else if(computerSelection === "scissors" && playerSelection === "paper"){
-            result = "computer wins"
+            result = "scissors beats paper computer wins"
         }
 
     }
