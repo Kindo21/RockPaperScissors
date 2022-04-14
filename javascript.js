@@ -25,7 +25,7 @@ The function should take two parameters - the playerSelection and computerSelect
 
 
  //rocklet computerSelection = computerPlay();
- let playerSelection = window.prompt("Please choose rock paper or scissors");
+ let playerSelection;  
  //let playerSelection = 'rock'
  let computerSelection = computerPlay();
 
@@ -65,8 +65,13 @@ function round(computerSelection, playerSelection) {
     
 }
 
-//computerPlay();
-console.log(round(computerSelection, playerSelection));
+for (let i = 0; i < 5; i++){
+    playerSelection = window.prompt("Please choose rock paper or scissors");
+    round();
+    console.log(round(computerSelection, playerSelection));
+}
+
+
 
 
 
