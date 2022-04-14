@@ -1,13 +1,3 @@
-/*let x = myFunction(4, 3);
-
-function myFunction(a, b){
-    return a *  b;
-}
-console.log(x)*/
-
-
-/*let y = computerPlay();*/
-
 
 function computerPlay(){
     const hand = ["rock", "paper", "scissors"];
@@ -16,21 +6,12 @@ function computerPlay(){
     return randomHand;
 }
 
-//console.log(computerPlay())
 
-/*Write a function that plays a single round of Rock Paper Scissors. 
-The function should take two parameters - the playerSelection and computerSelection
- - and then return a string that declares the winner of the round like so: 
- "You Lose! Paper beats Rock"*/ 
+let playerSelection;  
+
+let computerSelection = computerPlay();
 
 
- //rocklet computerSelection = computerPlay();
- let playerSelection;  
- //let playerSelection = 'rock'
- let computerSelection = computerPlay();
-
-//const computerSelection = "rock"; 
-//const playerSelection = "scissor";
 let result;
 
 function round(computerSelection, playerSelection) {
