@@ -25,29 +25,12 @@ The function should take two parameters - the playerSelection and computerSelect
 
 
  //rocklet computerSelection = computerPlay();
- //let playerSelection = window.prompt("Please choose rock paper or scissors");
+ let playerSelection = window.prompt("Please choose rock paper or scissors");
  //let playerSelection = 'rock'
- //let computerSelection = 'rock';
- /*if (computerSelection == 'rock' && playerSelection =='rock' || computerSelection == 'paper' && playerSelection == 'paper' || computerSelection == 'scissor' && playerSelection == 'scissor'){
-    result = 'tie';
-}
-else if(computerSelection == 'scissor' && playerSelection =='rock'){
-    result = 'computer loses'
-}
-else if(computerSelection == 'paper' && playerSelection =='rock'){
-result = 'computer wins'
-}
-else if(playerSelection == 'scissor' && computerSelection == 'rock'){
-result = 'player loses'
-}
-else if(){
+ let computerSelection = computerPlay();
 
-}
-else {
-result = 'you suck!'
-};*/
-const computerSelection = "rock"; 
-const playerSelection = "scissor";
+//const computerSelection = "rock"; 
+//const playerSelection = "scissor";
 
 
 function round(computerSelection, playerSelection) {
@@ -62,6 +45,18 @@ function round(computerSelection, playerSelection) {
         }
         else if(computerSelection === "rock" && playerSelection === "paper"){
             result = "player wins"
+        }
+        else if(computerSelection === "paper" && playerSelection === "rock"){
+            result = "computer wins"
+        }
+        else if(computerSelection === "paper" && playerSelection === "scissors"){
+            result = "player wins"
+        }
+        else if(computerSelection === "scissors" && playerSelection === "rock"){
+            result = "player wins"
+        }
+        else if(computerSelection === "scissors" && playerSelection === "paper"){
+            result = "computer wins"
         }
 
     }
