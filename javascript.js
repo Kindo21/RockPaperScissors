@@ -31,10 +31,10 @@ The function should take two parameters - the playerSelection and computerSelect
 
 //const computerSelection = "rock"; 
 //const playerSelection = "scissor";
-
+let result;
 
 function round(computerSelection, playerSelection) {
-    let result;
+    
     if (computerSelection === playerSelection){
         if(computerSelection === "rock" && playerSelection === "rock"){
             result = ' both chose rock tie';
@@ -72,13 +72,16 @@ function round(computerSelection, playerSelection) {
     return result;
     
 }
-
-for (let i = 0; i < 5; i++){
-    playerSelection = window.prompt("Please choose rock paper or scissors");
-    playerSelection.toLowerCase();
-    round();
-    console.log(round(computerSelection, playerSelection));
+function game(result){
+    for (let i = 0; i < 5; i++){
+        playerSelection = window.prompt("Please choose rock paper or scissors");
+        playerSelection.toLowerCase();
+        round();
+        console.log(round(computerSelection, playerSelection));
+    }
 }
+
+game();
 
 
 
