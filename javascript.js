@@ -1,10 +1,79 @@
 
+/*let scissor = document.createElement("button");
+scissor.innerHTML = "Scissor";
+
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(scissor);
+
+scissor.addEventListener ("click", function() {
+    alert("You picked scissor")
+})
+
+let rock = document.createElement("button");
+rock.innerHTML = "Scissor";
+
+var body = document.getElementsByTagName("body")[1];
+body.appendChild(rock);
+
+rock.addEventListener ("click", function() {
+    alert("You picked rock")
+})
+
+let paper = document.createElement("button");
+paper.innerHTML = "Scissor";
+
+var body = document.getElementsByTagName("body")[2];
+body.appendChild(paper);
+
+paper.addEventListener ("click", function() {
+    alert("You picked paper")
+})*/
+
+
+/*var Chapter = ["rock", "paper", "scissor"];
+for (i = 0; i < 3; i++) {
+    var button = document.createElement("button");
+    button.innerHTML = Chapter[i];
+    button.className = "btn btn-outline-success";
+    var buttonDiv = document.getElementById("buttons");
+    buttonDiv.appendChild(button);
+}*/
+
+/*let i = 1;
+let body = document.getElementsByTagName("body")[0];
+
+for (i; i <= 3; i++) {
+  let button = document.createElement("button");
+  button.innerHTML = 'Button '+i;
+  body.appendChild(button);
+  button.addEventListener ("click", function() {
+    alert(this.innerHTML);
+  });
+}*/
+
+/*const handSign = ["rock", "paper", "scissor"];
+handSign.forEach(buttonCreate);
+function buttonCreate(){
+    let button = document.createElement("button");
+    button.innerHTML
+}
+
+*/
 function computerPlay(){
     const hand = ["rock", "paper", "scissors"];
     let random =  Math.floor(Math.random()*hand.length);
     let randomHand = hand[random];
     return randomHand;
 }
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () =>
+        game()
+    )
+}
+)
+
 
 
 let playerSelection;  
@@ -53,16 +122,18 @@ function round(computerSelection, playerSelection) {
     return result;
     
 }
-/*function game(result){
-    for (let i = 0; i < 5; i++){
+
+
+function game(result){
+    //for (let i = 0; i < 5; i++){
         playerSelection = window.prompt("Please choose rock paper or scissors");
         playerSelection.toLowerCase();
         round();
         console.log(round(computerSelection, playerSelection));
-    }
-}*/
+    //}
+}
 
-//game();
+game();
 
 
 
