@@ -141,7 +141,7 @@ function scissors(){
         game(computerSelection, playerSelection);
         console.log("computer score: " + " " + computerScore + " " +  "player score: " + playerScore);
         document.getElementById('score').textContent = ("computer score: " + " " + computerScore + " " +  "player score: " + playerScore);
-        document.getElementById('winner').textContent = ("");
+        
         
         
 }
@@ -150,6 +150,7 @@ function game(computerSelection, playerSelection){
     //playerSelection = userResult;
     //console.log(playerSelection);
     //console.log(round(computerSelection, playerSelection));
+    document.getElementById('winner').textContent = ("");
     document.getElementById('selection').textContent = (round(computerSelection, playerSelection));
     if(playerScore === 5){
         document.getElementById('winner').textContent = ("Player is the winner!");
@@ -160,6 +161,7 @@ function game(computerSelection, playerSelection){
         document.getElementById('winner').textContent = ("Computer is the winner!");
         playerScore = 0;
         computerScore = 0;    
+
     }
     
     
